@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ternary Check</title>
+  </head>
+  <body>
+    <input type="number" id="input" />
+    <button onclick="on()">Check</button>
+    <p id="p"></p>
+
+    <script>
+      function on() {
+        let num = Number(document.getElementById("input").value);
+        const result = num > 0 ? "Positive" : num < 0 ? "Negative" : "Zero";
+        document.getElementById("p").innerHTML = result;
+      }
+    </script>
+  </body>
+</html>
