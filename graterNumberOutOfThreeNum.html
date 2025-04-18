@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        background-color: gray;
+        margin: auto;
+        padding: auto;
+      }
+      input {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        padding: 20px;
+        border: 2px solid violet;
+      }
+      h1 {
+        text-align: center;
+        color: white;
+      }
+      button {
+        padding: 10px;
+        margin-top: 10px;
+        color: blue;
+        background-color: black;
+      }
+      p {
+        text-align: center;
+        font-size: xx-large;
+        background-image: linear-gradient(to right, violet 20%, pink 50%);
+      }
+      .center {
+        display: grid;
+        place-items: center;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Greater among three number</h1>
+    <div class="center">
+      <input type="number" id="1st" placeholder="Enter the number" />
+      <input type="number" id="2nd" placeholder="Enter the number" />
+      <input type="number" id="3rd" placeholder="Enter the number" />
+      <button onclick="c()">Who Is Greater?</button>
+    </div>
+    <p id="p">Enter The Numbers Properly</p>
+    <script>
+      function c() {
+        let num1 = document.getElementById("1st").value;
+        let num2 = document.getElementById("2nd").value;
+        let num3 = document.getElementById("3rd").value;
+
+        if (num1 > num2 && num1 > num3) {
+          document.getElementById("p").innerHTML = "This is big :" + num1;
+        } else if (num2 > num1 && num2 > num3) {
+          document.getElementById("p").innerHTML = "This is big :" + num2;
+        } else {
+          document.getElementById("p").innerHTML = "This is big :" + num3;
+        }
+      }
+    </script>
+  </body>
+</html>

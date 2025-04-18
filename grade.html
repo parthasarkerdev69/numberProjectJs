@@ -14,8 +14,9 @@
     <script>
       function result() {
         let num = document.getElementById("marks").value;
-
-        if (num >= 80) {
+        if (num > 100 || num < 0) {
+          document.getElementById("ii").innerHTML = "invalid";
+        } else if (num >= 80) {
           document.getElementById("ii").innerHTML = "+A";
         } else if (num >= 70) {
           document.getElementById("ii").innerHTML = "A";
