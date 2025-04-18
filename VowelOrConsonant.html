@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VowelOrConsonant</title>
+  </head>
+  <body>
+    <h1>Vowel Or Consonant</h1>
+    <input
+      type="text"
+      name=""
+      id="letter"
+      placeholder="Enter a letter"
+      maxlength="1"
+    />
+    <button onclick="on()">check it</button>
+    <p id="p">Enter it than I will tell you</p>
+    <script>
+      function on() {
+        let inputLetter = document.getElementById("letter").value;
+
+        if (inputLetter === "A" || inputLetter === "a") {
+          document.getElementById("p").innerHTML = "Yes its a vowel";
+        } else if (inputLetter === "E" || inputLetter === "e") {
+          document.getElementById("p").innerHTML = "Yes its a vowel";
+        } else if (inputLetter === "I" || inputLetter === "i") {
+          document.getElementById("p").innerHTML = "Yes its a vowel";
+        } else if (inputLetter === "O" || inputLetter === "o") {
+          document.getElementById("p").innerHTML = "Yes its a vowel";
+        } else if (inputLetter === "U" || inputLetter === "u") {
+          document.getElementById("p").innerHTML = "Yes its a vowel";
+        } else {
+          document.getElementById("p").innerHTML = "No its a consonant";
+        }
+      }
+    </script>
+  </body>
+</html>
