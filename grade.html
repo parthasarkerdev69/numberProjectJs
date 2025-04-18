@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grade Counter</title>
+  </head>
+  <body>
+    <h1>Grade Counter</h1>
+    <input type="number" id="marks" placeholder="Enter Your Marks" />
+    <button onclick="result()">Check Grade</button>
+    <p>You got <span id="ii">a</span></p>
+
+    <script>
+      function result() {
+        let num = document.getElementById("marks").value;
+
+        if (num >= 80) {
+          document.getElementById("ii").innerHTML = "+A";
+        } else if (num >= 70) {
+          document.getElementById("ii").innerHTML = "A";
+        } else if (num >= 60) {
+          document.getElementById("ii").innerHTML = "-A";
+        } else if (num >= 50) {
+          document.getElementById("ii").innerHTML = "B";
+        } else if (num >= 40) {
+          document.getElementById("ii").innerHTML = "C";
+        } else if (num >= 33) {
+          document.getElementById("ii").innerHTML = "D";
+        } else {
+          document.getElementById("ii").innerHTML = "Fail";
+        }
+      }
+    </script>
+  </body>
+</html>
